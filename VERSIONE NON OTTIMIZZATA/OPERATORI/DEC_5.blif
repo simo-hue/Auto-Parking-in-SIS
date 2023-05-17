@@ -13,9 +13,9 @@
 # Decrementare di 1 equivale ad aggiungere 11111!
 .subckt SOMMATORE_5 A4=A4 A3=A3 A2=A2 A1=A1 A0=A0  B4=C_1_4 B3=C_1_3 B2=C_1_2 B1=C_1_1 B0=C_1_0  CIN=CONST_0 O4=O4 O3=O3 O2=O2 O1=O1 O0=O0
 
-.search costanti/COSTANTE_0.blif
-.search costanti/COSTANTE_1.blif
-.search operatori/SOMMATORE_5.blif
+.search costanti/C_0.blif
+.search costanti/C_1.blif
+.search operatori/SOM_5.blif
 
 .end
 
