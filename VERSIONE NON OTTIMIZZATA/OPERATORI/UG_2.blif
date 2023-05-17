@@ -1,4 +1,4 @@
-.model UGUALE_2
+.model UG_2
 .inputs A1 A0  B1 B0
 .outputs O
 
