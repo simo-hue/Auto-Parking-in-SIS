@@ -1,6 +1,6 @@
 # Multiplexer con selettore da 3 Bit (8 opzioni) e I/O da 5 Bit
-# Selettore S, opzioni { A, B, C, D, E, F, G, H }
-.model MUX_S3_5
+
+.model MUX_3_5
 .inputs S2 S1 S0  A4 A3 A2 A1 A0  B4 B3 B2 B1 B0  C4 C3 C2 C1 C0  D4 D3 D2 D1 D0  E4 E3 E2 E1 E0  F4 F3 F2 F1 F0  G4 G3 G2 G1 G0  H4 H3 H2 H1 H0
 .outputs O4 O3 O2 O1 O0
 

@@ -1,6 +1,6 @@
 # Multiplexer con selettore da 2 bit (quattro opzioni) e I/O da 1 bit
-# Selettore S, opzioni { A, B, C, D }
-.model MUX_S2_1
+
+.model MUX_2_1
 .inputs S1 S0  A  B  C  D
 .outputs O
 
