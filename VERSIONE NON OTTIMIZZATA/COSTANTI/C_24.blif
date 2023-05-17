@@ -1,5 +1,7 @@
 # Per i 24 posti del parcheggio
+
 .model C_24
+
 .outputs O4 O3 O2 O1 O0
 
 .subckt C_1 O=O4
