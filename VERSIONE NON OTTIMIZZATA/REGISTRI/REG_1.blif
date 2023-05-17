@@ -1,0 +1,6 @@
+.model REG_1
+.inputs A
+.outputs O
+
+.latch A O re NIL 0
+.end
