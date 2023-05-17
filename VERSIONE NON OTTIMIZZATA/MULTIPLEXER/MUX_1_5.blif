@@ -10,6 +10,6 @@
 .subckt MUX_S1_1 S=S  A=A1 B=B1  O=O1
 .subckt MUX_S1_1 S=S  A=A0 B=B0  O=O0
 
-.search flusso/mux/MUX_S1_1.blif
+.search MUX_1_1.blif
 
 .end

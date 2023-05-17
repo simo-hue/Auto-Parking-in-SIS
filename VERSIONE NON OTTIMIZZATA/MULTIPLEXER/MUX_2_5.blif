@@ -10,6 +10,6 @@
 .subckt MUX_S2_5 S1=S1 S0=S0  A0=A1  B0=B1  C0=C1  D0=D1  O=O1
 .subckt MUX_S2_5 S1=S1 S0=S0  A0=A0  B0=B0  C0=C0  D0=D0  O=O0
 
-.search MUX_S2_1.blif
+.search MUX_2_1.blif
 
 .end

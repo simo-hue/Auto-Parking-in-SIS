@@ -1,6 +1,6 @@
 # Multiplexer con selettore da 1 bit (due opzioni) e I/O da 1 bit
 
-.model MMUX_1_1
+.model MUX_1_1
 .inputs S  A  B
 .outputs O 
 
