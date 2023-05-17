@@ -4,12 +4,12 @@
 
 .outputs O4 O3 O2 O1 O0
 
-.subckt COSTANTE_1 O=O4
-.subckt COSTANTE_1 O=O3
-.subckt COSTANTE_1 O=O2
-.subckt COSTANTE_1 O=O1
-.subckt COSTANTE_1 O=O0
+.subckt C_1 O=O4
+.subckt C_1 O=O3
+.subckt C_1 O=O2
+.subckt C_1 O=O1
+.subckt C_1 O=O0
 
-.search costanti/C_1.blif
+.search COSTANTI/C_1.blif
 
 .end

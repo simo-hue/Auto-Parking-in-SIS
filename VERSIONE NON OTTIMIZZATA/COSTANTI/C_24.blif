@@ -10,7 +10,7 @@
 .subckt C_0 O=O2
 .subckt C_0 O=O0
 
-.search costanti/C_0.blif
-.search costanti/C_1.blif
+.search COSTANTI/C_0.blif
+.search COSTANTI/C_1.blif
 
 .end
