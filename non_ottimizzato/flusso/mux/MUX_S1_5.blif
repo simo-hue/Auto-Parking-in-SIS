@@ -1,0 +1,15 @@
+# Multiplexer con selettore da 1 bit (due opzioni) e I/O da 5 bit
+# Selettore S, opzioni { A, B }
+.model MUX_S1_5
+.inputs S  A4 A3 A2 A1 A0  B4 B3 B2 B1 B0
+.outputs O4 O3 O2 O1 O0
+
+.subckt MUX_S1_1 S=S  A=A4 B=B4  O=O4
+.subckt MUX_S1_1 S=S  A=A3 B=B3  O=O3
+.subckt MUX_S1_1 S=S  A=A2 B=B2  O=O2
+.subckt MUX_S1_1 S=S  A=A1 B=B1  O=O1
+.subckt MUX_S1_1 S=S  A=A0 B=B0  O=O0
+
+.search flusso/mux/MUX_S1_1.blif
+
+.end

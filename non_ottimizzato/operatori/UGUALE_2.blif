@@ -1,0 +1,11 @@
+.model UGUALE_2
+.inputs A1 A0  B1 B0
+.outputs O
+
+.names A1 A0 B1 B0  O
+0000 1
+0101 1
+1010 1
+1111 1
+
+.end

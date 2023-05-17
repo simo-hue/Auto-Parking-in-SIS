@@ -1,0 +1,15 @@
+.model UGUALE_3
+.inputs A2 A1 A0  B2 B1 B0
+.outputs O
+
+.names A2 A1 A0  B2 B1 B0  O
+000000 1
+001001 1
+010010 1
+011011 1
+100100 1
+101101 1
+110110 1
+111111 1
+
+.end

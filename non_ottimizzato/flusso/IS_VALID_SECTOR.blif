@@ -1,0 +1,12 @@
+# Restituisce 1 se (A == 100 or A == 010 or A == 001).
+# È più comodo di collegare insieme == e or.
+.model IS_VALID_SECTOR
+.inputs A2 A1 A0
+.outputs O
+
+.names A2 A1 A0  O
+100 1
+010 1
+001 1
+
+.end

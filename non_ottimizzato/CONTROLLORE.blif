@@ -1,0 +1,24 @@
+.model CONTROLLORE
+.inputs TURN_OFF TURN_ON 
+.outputs IS_NIGHT SAVING_LOCATION1 SAVING_LOCATION0
+
+.start_kiss
+.i 2 # Numero di input
+.o 3 # Numero di output
+.p 8 # Numero di transizioni
+.s 6 # Numero di stati
+.r NOTTE # Stato di reset (stato iniziale?)
+
+# Formato: entrate STATO_INIZIALE STATO_FINALE uscite
+-0 NOTTE NOTTE 100
+-1 NOTTE OPEN 100
+-- OPEN INS_A 101
+-- INS_A INS_B 110
+-- INS_B INS_C 111
+-- INS_C GIORNO 000
+0- GIORNO GIORNO 000
+1- GIORNO NOTTE 100
+
+.end_kiss
+
+.end

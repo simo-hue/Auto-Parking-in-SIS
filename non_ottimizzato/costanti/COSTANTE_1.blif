@@ -1,0 +1,8 @@
+# Rappresenta la costante 1₁₀ / 1₂
+.model COSTANTE_1
+.outputs O
+
+.names O
+1
+
+.end

@@ -1,0 +1,7 @@
+# Rappresenta la costante 0₂
+.model COSTANTE_0
+.outputs O
+
+.names O
+
+.end

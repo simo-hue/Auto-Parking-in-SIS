@@ -1,0 +1,17 @@
+# Multiplexer con selettore da 3 bit (8 opzioni) e I/O da 1 bit
+# Selettore S, opzioni { A, B, C, D, E, F, G, H }
+.model MUX_S3_1
+.inputs S2 S1 S0  A  B  C  D  E  F  G  H
+.outputs O
+
+.names S2 S1 S0  A  B  C  D  E  F  G  H  O
+0001------- 1
+001-1------ 1
+010--1----- 1
+011---1---- 1
+100----1--- 1
+101-----1-- 1
+110------1- 1
+111-------1 1
+
+.end

@@ -1,0 +1,13 @@
+# Rappresenta la costante 31₁₀ / 11111₂
+.model COSTANTE_31_11111
+.outputs O4 O3 O2 O1 O0
+
+.subckt COSTANTE_1 O=O4
+.subckt COSTANTE_1 O=O3
+.subckt COSTANTE_1 O=O2
+.subckt COSTANTE_1 O=O1
+.subckt COSTANTE_1 O=O0
+
+.search costanti/COSTANTE_1.blif
+
+.end
