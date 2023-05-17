@@ -1,5 +1,5 @@
 # Rappresenta la costante 0₂
-.model COSTANTE_0
+.model C0
 .outputs O
 
 .names O
