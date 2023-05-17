@@ -1,0 +1,46 @@
+# Sommatore da 1 bit
+.model SUM_1
+.inputs A  B  CIN
+.outputs O  COUT
+
+.names A B  TMP
+10 1
+01 1
+
+.names TMP CIN  O
+10 1
+01 1
+
+.names A B CIN COUT
+11- 1
+1-1 1
+-11 1
+
+.end
+
+.model SUM_1_NOCOUT
+.inputs A  B  CIN
+.outputs O
+
+.names A B  TMP
+10 1
+01 1
+
+.names TMP CIN  O
+10 1
+01 1
+
+.end
+
+# Sommatore da 5 bit
+.model SUM_5
+.inputs A4 A3 A2 A1 A0  B4 B3 B2 B1 B0  CIN
+.outputs O4 O3 O2 O1 O0
+
+.subckt SUM_1 A=A0 B=B0 CIN=CIN O=O0 COUT=TMP0
+.subckt SUM_1 A=A1 B=B1 CIN=TEMP0 O=O1 COUT=TMP1
+.subckt SUM_1 A=A2 B=B2 CIN=TEMP1 O=O2 COUT=TMP2
+.subckt SUM_1 A=A3 B=B3 CIN=TEMP2 O=O3 COUT=TMP3
+.subckt SUM_1_NOCOUT A=A4 B=B4 CIN=TMP3 O=O4
+
+.end
