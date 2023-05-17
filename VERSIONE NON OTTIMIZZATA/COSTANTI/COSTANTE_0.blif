@@ -1,7 +1,0 @@
-# Rappresenta la costante 0₂
-.model C0
-.outputs O
-
-.names O
-
-.end
