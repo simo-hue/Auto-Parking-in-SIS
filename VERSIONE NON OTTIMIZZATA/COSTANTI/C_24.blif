@@ -1,0 +1,14 @@
+# Per i 24 posti del parcheggio
+.model C_24
+.outputs O4 O3 O2 O1 O0
+
+.subckt C_1 O=O4
+.subckt C_1 O=O3
+.subckt C_0 O=O1
+.subckt C_0 O=O2
+.subckt C_0 O=O0
+
+.search costanti/C_0.blif
+.search costanti/C_1.blif
+
+.end
