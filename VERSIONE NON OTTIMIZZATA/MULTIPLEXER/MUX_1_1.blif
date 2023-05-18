@@ -1,4 +1,4 @@
-# Multiplexer con selettore da 1 bit (due opzioni) e I/O da 1 bit
+# Multiplexer con selettore da 1 bit con I/O da 1 bit
 
 .model MUX_1_1
 .inputs S  A  B
