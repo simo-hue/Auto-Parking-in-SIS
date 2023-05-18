@@ -1,4 +1,4 @@
-.model UG_2
+.model EQ_2
 .inputs A1 A0  B1 B0
 .outputs O
 
