@@ -1,9 +1,0 @@
-# È più comodo di collegare insieme == e la costante 00000.
-.model IS_TURN_OFF
-.inputs A4 A3 A2 A1 A0
-.outputs O
-
-.names A4 A3 A2 A1 A0  O
-00000 1
-
-.end

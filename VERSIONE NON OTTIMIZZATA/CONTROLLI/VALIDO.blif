@@ -1,0 +1,11 @@
+
+.model VALIDO
+.inputs A2 A1 A0
+.outputs O
+
+.names A2 A1 A0  O
+100 1
+010 1
+001 1
+
+.end
