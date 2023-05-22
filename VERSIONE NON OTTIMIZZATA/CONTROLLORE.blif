@@ -1,6 +1,6 @@
 .model CONTROLLORE
 .inputs PWR_STATUS_ON PWR_STATUS_OFF
-.outputs NOT_OPEN LOCATION1 LOCATION0
+.outputs NOT_OPER LOCATION1 LOCATION0
 
 .start_kiss
 .i 2 # Numero di input
