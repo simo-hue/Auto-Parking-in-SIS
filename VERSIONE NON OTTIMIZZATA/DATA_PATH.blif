@@ -5,7 +5,7 @@
 # Segnali di stato: TURN_OFF, TURN_ON
 
 .model DATA_PATH
-.inputs IO1 IO0  S2 S1 S0  IS_NIGHT  SAVING_LOCATION1  SAVING_LOCATION0 
+.inputs IO1 IO0  S2 S1 S0  NOT_OPER  LOCATION1  LOCATION0 
 .outputs SNV SB_IN  SB_OUT  SET_A  SET_B  SET_C  SPEGNI ACCENDI
 
 # Definizione costanti
