@@ -1,22 +1,22 @@
 .model CONTROLLORE
-.inputs TURN_OFF TURN_ON 
-.outputs IS_NIGHT SAVING_LOCATION1 SAVING_LOCATION0
+.inputs PWR_STATUS_ON PWR_STATUS_OFF
+.outputs NOT_OPEN LOCATION1 LOCATION0
 
 .start_kiss
 .i 2 # Numero di input
 .o 3 # Numero di output
 .p 8 # Numero di transizioni
 .s 6 # Numero di stati
-.r NOTTE # Stato di reset
+.r S_OFF # Stato di reset
 
--0 NOTTE NOTTE 100
--1 NOTTE OPEN 100
--- OPEN INS_A 101
--- INS_A INS_B 110
--- INS_B INS_C 111
--- INS_C GIORNO 000
-0- GIORNO GIORNO 000
-1- GIORNO NOTTE 100
+-0 S_OFF S_OFF 100
+-1 S_OFF S_FIR_IN 100
+-- S_FIR_IN S_IN_A 101
+-- S_IN_A S_IN_B 110
+-- S_IN_B S_IN_C 111
+-- S_IN_C S_ON 000
+0- S_ON S_ON 000
+1- S_ON S_OFF 100
 
 .end_kiss
 
