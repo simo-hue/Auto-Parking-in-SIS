@@ -14,7 +14,7 @@
 
 .search COSTANTI/C_0.blif
 .search COSTANTI/C_1.blif
-.search COSTANTI/SUM_5.blif
+.search OPERATORI/SUM_5.blif
 
 .end
 
