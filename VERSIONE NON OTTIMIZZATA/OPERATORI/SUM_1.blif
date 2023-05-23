@@ -1,0 +1,33 @@
+# Sommatore da 1 bit
+.model SUM_1
+.inputs A  B  CIN
+.outputs O  COUT
+
+.names A B  TMP
+10 1
+01 1
+
+.names TMP CIN  O
+10 1
+01 1
+
+.names A B CIN COUT
+11- 1
+1-1 1
+-11 1
+
+.end
+
+.model SUM_1_NOCOUT
+.inputs A  B  CIN
+.outputs O
+
+.names A B  TMP
+10 1
+01 1
+
+.names TMP CIN  O
+10 1
+01 1
+
+.end
