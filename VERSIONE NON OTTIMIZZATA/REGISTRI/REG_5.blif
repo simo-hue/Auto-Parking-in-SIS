@@ -8,6 +8,6 @@
 .subckt REG_1 A=A1 O=O1
 .subckt REG_1 A=A0 O=O0
 
-.search REG_1.blif
+.search REGISTRI/REG_1.blif
 
 .end

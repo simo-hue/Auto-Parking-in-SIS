@@ -1,4 +1,4 @@
-Selettore da 1 bit e I/O da 5 bit
+#Selettore da 1 bit e I/O da 5 bit
 
 .model MUX_1_5
 .inputs S  A4 A3 A2 A1 A0  B4 B3 B2 B1 B0
@@ -10,6 +10,6 @@ Selettore da 1 bit e I/O da 5 bit
 .subckt MUX_1_1 S=S  A=A1 B=B1  O=O1
 .subckt MUX_1_1 S=S  A=A0 B=B0  O=O0
 
-.search MUX_1_1.blif
+.search MULTIPLEXER/MUX_1_1.blif
 
 .end

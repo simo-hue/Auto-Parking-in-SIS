@@ -46,13 +46,13 @@
 .search REGISTRI/REG_5.blif
 .search MULTIPLEXER/MUX_1_5.blif
 .search OPERATORI/INC_5.blif
-.search OPERATORI/DE_5.blif
+.search OPERATORI/DEC_5.blif
 .search OPERATORI/EQ_2.blif
 .search OPERATORI/UG_3.blif
 .search OPERATORI/MINO_5.blif
 .search OPERATORI/MIN_5.blif
 .search OPERATORI/MAX_5.blif
-.search OPERATORI/C_0.blif
-.search OPERATORI/C_1.blif
+.search COSTANTI/C_0.blif
+.search COSTANTI/C_1.blif
 
 .end

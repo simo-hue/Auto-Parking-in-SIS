@@ -7,8 +7,8 @@
 
 .subckt SUM_5 A4=A4 A3=A3 A2=A2 A1=A1 A0=A0  B4=CONST_0 B3=CONST_0 B2=CONST_0 B1=CONST_0 B0=CONST_1  CIN=CONST_0 O4=O4 O3=O3 O2=O2 O1=O1 O0=O0
 
-.search COSNTANTI/C_0.blif
-.search OPERATORI/C_1.blif
+.search COSTANTI/C_0.blif
+.search COSTANTI/C_1.blif
 .search OPERATORI/SUM_5.blif
 
 .end

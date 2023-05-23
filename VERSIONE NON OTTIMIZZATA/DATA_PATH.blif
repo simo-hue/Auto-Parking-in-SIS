@@ -9,10 +9,10 @@
 .outputs SNV SB_IN  SB_OUT  SET_A  SET_B  SET_C  PWR_STATUS_OFF_TEMP PWR_STATUS_ON_TEMP
 
 # Definizione costanti
-.subckt C_0 O = C_0
-.subckt C_1 O = C_1
-.subckt C_31 O4 = C_31_4 O3 = C_31_3 O2 = C_31_2 O1 = C_31_1 O0 = C_31_0
-.subckt C_24  O4 = C_24_4 O3 = C_24_3 O2 = C_24_2 O1 = C_24_1 O0 = C_24_0
+.subckt C_0 O=C_0
+.subckt C_1 O=C_1
+.subckt C_31 O4=C_31_4 O3=C_31_3 O2=C_31_2 O1=C_31_1 O0=C_31_0
+.subckt C_24 O4=C_24_4 O3=C_24_3 O2=C_24_2 O1=C_24_1 O0=C_24_0
 
 # Settori
 # Poiché il codice per ogni settore è ripetuto con poche modifiche lo abbiamo estratto in un data path separato.
@@ -40,7 +40,7 @@
 .subckt MUX_1_1 S=NOT_OPER  A=ENTRA B=C_1  O=SB_IN
 
 # SETTORE_NON_VALIDO
-.subckt VALIDO A2=S2 A1=S1 A0=S0  O = SETTORE_VALIDO
+.subckt VALIDO A2=S2 A1=S1 A0=S0  O=SETTORE_VALIDO
 .subckt NOT A=SETTORE_VALIDO  O=SETTORE_NON_VALIDO_TEMP
 .subckt MUX_1_1 S=NOT_OPER  A=SETTORE_NON_VALIDO_TEMP B=CONST_0  O=SNV
 
@@ -51,9 +51,9 @@
 .search MULTIPLEXER/MUX_1_1.blif
 .search MULTIPLEXER/MUX_2_1.blif
 .search MULTIPLEXER/MUX_3_1.blif
-.search CONTROLLO/OFF.blif
-.search CONTROLLO/ON.blif
-.search CONTROLLO/VALIDO.blif
+.search CONTROLLI/OFF.blif
+.search CONTROLLI/ON.blif
+.search CONTROLLI/VALIDO.blif
 .search OPERATORI/NOT.blif
 .search COSTANTI/C_0.blif
 .search COSTANTI/C_1.blif
