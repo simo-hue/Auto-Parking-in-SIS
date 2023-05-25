@@ -1,0 +1,19 @@
+# Ordine Output
+# SBARRA IN | SBARRA OUT | SEC A | SEC B | SEC C 
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 1 # Il settore C è pieno
+0 1 0 0 0 1 # accetta ingresso settore A, C è ancora pieno
+0 0 1 0 0 1 # Accetta Uscita Settore B, C è ancora pieno
+0 0 1 0 0 0 # Accetta Uscita Settore C, C ora ha posti disponibili
+0 1 0 0 0 1 # Accetta ingresso Settore C, Ora C è nuovamente pieno
+1 0 0 0 0 1 # Errore Settore. Non fa nulla
+0 0 0 0 0 1 # Non accetta ingresso settore C
+0 1 0 0 0 1 # Accetta Ingresso Settore B
+0 1 0 0 0 1 # Accetta Ingresso Settore B
+0 1 0 0 1 1 # Accetta Ingresso Settore B
+0 0 0 0 1 1 # Accetta Ingresso Settore B
+
