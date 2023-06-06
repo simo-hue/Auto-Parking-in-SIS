@@ -2,9 +2,9 @@
 .model CONTROLLORE
 .inputs PWR_STATUS_ON PWR_STATUS_OFF
 .outputs NOT_OPER LOCATION1 LOCATION0
-.latch    [2840] LatchOut_v2   0
-.latch    [2841] LatchOut_v3   1
-.latch    [2842] LatchOut_v4   1
+.latch    [3] LatchOut_v2   0
+.latch    [4] LatchOut_v3   0
+.latch    [5] LatchOut_v4   0
 .start_kiss
 .i 2
 .o 3
@@ -21,49 +21,46 @@
 1- S_ON S_OFF 100
 .end_kiss
 .latch_order LatchOut_v2 LatchOut_v3 LatchOut_v4
-.code S_OFF 011
-.code S_FIR_IN 111
-.code S_IN_A 101
-.code S_IN_B 110
+.code S_OFF 000
+.code S_FIR_IN 001
+.code S_IN_A 010
+.code S_IN_B 011
 .code S_IN_C 100
-.code S_ON 010
-.names PWR_STATUS_OFF LatchOut_v2 LatchOut_v3 LatchOut_v4 [2840]
-1--1 1
---01 1
--111 1
--110 1
-.names LatchOut_v2 LatchOut_v3 [2841]
-0- 1
--0 1
-.names PWR_STATUS_ON LatchOut_v2 LatchOut_v3 LatchOut_v4 [2842]
-10-- 1
--0-1 1
--111 1
-.names PWR_STATUS_ON LatchOut_v2 LatchOut_v3 LatchOut_v4 NOT_OPER
-10-- 1
--0-1 1
---01 1
--111 1
--110 1
-.names LatchOut_v2 LatchOut_v3 LatchOut_v4 LOCATION1
--01 1
-110 1
+.code S_ON 101
+.names PWR_STATUS_ON LatchOut_v2 LatchOut_v3 LatchOut_v4 [3]
+01-- 1
+--11 1
+-1-0 1
+.names LatchOut_v2 LatchOut_v3 LatchOut_v4 [4]
+-10 1
+001 1
+.names PWR_STATUS_ON PWR_STATUS_OFF LatchOut_v2 LatchOut_v3 LatchOut_v4 [5]
+0-1-- 1
+-1--0 1
+--1-0 1
+---10 1
+.names PWR_STATUS_ON LatchOut_v2 LatchOut_v4 NOT_OPER
+-0- 1
+1-1 1
+.names LatchOut_v3 LatchOut_v4 LOCATION1
+11 1
+10 1
 .names LatchOut_v2 LatchOut_v3 LatchOut_v4 LOCATION0
-111 1
-110 1
+-11 1
+001 1
 .exdc 
 .inputs PWR_STATUS_ON PWR_STATUS_OFF LatchOut_v2 LatchOut_v3 LatchOut_v4
-.outputs [2840] [2841] [2842] NOT_OPER LOCATION1 LOCATION0
-.names LatchOut_v2 LatchOut_v3 [2840]
-00 1
-.names LatchOut_v2 LatchOut_v3 [2841]
-00 1
-.names LatchOut_v2 LatchOut_v3 [2842]
-00 1
+.outputs [3] [4] [5] NOT_OPER LOCATION1 LOCATION0
+.names LatchOut_v2 LatchOut_v3 [3]
+11 1
+.names LatchOut_v2 LatchOut_v3 [4]
+11 1
+.names LatchOut_v2 LatchOut_v3 [5]
+11 1
 .names LatchOut_v2 LatchOut_v3 NOT_OPER
-00 1
+11 1
 .names LatchOut_v2 LatchOut_v3 LOCATION1
-00 1
+11 1
 .names LatchOut_v2 LatchOut_v3 LOCATION0
-00 1
+11 1
 .end
