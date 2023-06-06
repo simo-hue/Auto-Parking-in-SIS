@@ -1,0 +1,18 @@
+source script.rugged;
+source script.rugged;
+source script.rugged;
+source script.rugged;
+sweep;
+sweep;
+full_simplify;
+full_simplify;
+fx;
+fx;
+sweep;
+sweep;
+full_simplify;
+full_simplify;
+fx;
+fx;
+
+
