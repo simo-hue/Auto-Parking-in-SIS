@@ -20,4 +20,13 @@
 
 .end_kiss
 
+.code S_OFF 000
+.code S_FIR_IN 001
+.code S_IN_A 010
+.code S_IN_B 011
+.code S_IN_C 100
+.code S_ON 101
+
+
+
 .end
